@@ -17,9 +17,10 @@ internal class BattleRateItemAdapter :
         position: Int
     ) {
         viewBinding.apply {
-            allCount.text = "总：" + (item.lostCount + item.winCount).toString()
-            winCount.text = "胜：" + item.winCount.toString()
-            lostCount.text = "负：" + item.lostCount.toString()
+            allCount.text =
+                "Played：" + (item.lostCount + item.winCount).toString()
+            winCount.text = "Wins：" + item.winCount.toString()
+            lostCount.text = "Loses：" + item.lostCount.toString()
 
             winRate.text = item.rate.toString() + "%"
             when (item) {

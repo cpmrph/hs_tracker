@@ -12,6 +12,7 @@
     <string name="module_default_version">133122</string>
     <string name="module_chinese">Chinese</string>
     <string name="module_english">English</string>
+    <string name="module_japanese">Japanese</string>
     <string name="module_sync">sync</string>
     <string name="module_syncing">syncing</string>
     <string name="module_code">code</string>

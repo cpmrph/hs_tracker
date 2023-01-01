@@ -37,7 +37,12 @@ class SyncCardDataActivity : AppCompatActivity() {
         binding.sync.setOnClickListener {
             viewModel.sync(
                 binding.version.text?.toString() ?: "",
-                if (binding.chinese.isChecked) "zhCN" else "enUS"
+                when (binding.radioGroup.checkedRadioButtonId) {
+                    R.id.chinese -> "zhCN"
+                    R.id.english -> "enUS"
+                    R.id.japanese -> "jaJP"
+                    else -> "enUS"
+                }
             )
         }
 

@@ -12,6 +12,7 @@
     <string name="module_default_version">133122</string>
     <string name="module_chinese">中文</string>
     <string name="module_english">英文</string>
+    <string name="module_japanese">日文</string>
     <string name="module_sync">同步</string>
     <string name="module_syncing">同步中</string>
     <string name="module_code">代码</string>
@@ -139,5 +140,4 @@
     <string name="module_floating_track">悬浮窗记牌</string>
     <string name="module_github_address">https://github.com/keluokeda/hs_tracker</string>
     <string name="module_support">赞助</string>
-
 </resources>

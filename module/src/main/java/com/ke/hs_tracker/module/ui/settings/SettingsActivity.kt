@@ -13,7 +13,7 @@ import com.ke.hs_tracker.module.ui.deck.DeckCodeParserActivity
 import com.ke.hs_tracker.module.ui.migrate.MigrateMainActivity
 import com.ke.hs_tracker.module.ui.support.SupportActivity
 import com.ke.hs_tracker.module.ui.sync.SyncCardDataActivity
-import com.ke.hs_tracker.module.ui.test.TestActivity
+//import com.ke.hs_tracker.module.ui.test.TestActivity
 import com.ke.hs_tracker.module.ui.theme.ThemeActivity
 import com.ke.hs_tracker.module.ui.writeconfig.WriteConfigActivity
 import com.ke.mvvm.base.ui.launchAndRepeatWithViewLifecycle
@@ -49,17 +49,17 @@ class SettingsActivity : AppCompatActivity(), CompoundButton.OnCheckedChangeList
             }
         }
 
-        binding.toolbar.apply {
-            setNavigationOnClickListener {
-                onBackPressed()
-            }
-            this.menu.add(0, 0, 0, "测试")
-            this.setOnMenuItemClickListener {
-                startActivity(Intent(this@SettingsActivity, TestActivity::class.java))
-
-                true
-            }
-        }
+//        binding.toolbar.apply {
+//            setNavigationOnClickListener {
+//                onBackPressed()
+//            }
+//            this.menu.add(0, 0, 0, "测试")
+//            this.setOnMenuItemClickListener {
+//                startActivity(Intent(this@SettingsActivity, TestActivity::class.java))
+//
+//                true
+//            }
+//        }
 
 
         binding.theme.setOnClickListener {

@@ -38,7 +38,7 @@ class SyncCardDataViewModel @Inject constructor(
     ) {
 
         viewModelScope.launch {
-            showLoadingDialog("同步中")
+            showLoadingDialog("syncing")
 
             val code = versionCode.ifEmpty { "latest" }
 
@@ -52,7 +52,7 @@ class SyncCardDataViewModel @Inject constructor(
                 is Result.Error -> {
                     result.exception.printStackTrace()
                     dismissLoadingDialog()
-                    showSnackbar(SnackbarAction("从服务器获取数据失败"))
+                    showSnackbar(SnackbarAction("Failed to fetch data from server"))
 //                    throw result.exception
                 }
             }
